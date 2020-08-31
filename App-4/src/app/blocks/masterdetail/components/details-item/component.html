@@ -1,0 +1,22 @@
+<!--
+	Hier stehen die Übersichtsinformationen  details=false
+-->
+<div *ngIf="details">
+	<h2>{{ theItem.title }}</h2>
+
+	<p> Notiz: {{ theItem.note }}</p>
+	<p>Kostet: {{ theItem.price }}</p>
+
+</div>
+
+<!--
+	Hier stehen die Detailinformationen  details=true
+-->
+<div *ngIf="!details">
+	<ion-icon [name]="theItem.icon" slot="start"></ion-icon>
+	{{theItem.title}}: {{theItem.price}}
+
+	<div class="item-note" slot="end">
+		{{theItem.note}}
+	</div>
+</div>

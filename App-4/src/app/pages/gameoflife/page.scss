@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Geo');
+$logo-color: rgba(139,
+195,
+74,
+1);
+.md {
+    --ion-background-color: #aaaaaa;
+}
+
+body {
+    font-family: Sans-serif;
+}
+
+#game {
+    background-color: #bbbbbb;
+    border: 2px solid rgba(224, 224, 224, 1);
+}
+
+#world {
+    border-color: black;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    display: block;
+    border: 2px solid rgba(224, 224, 224, 1);
+}
+
+.control-panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ctrl-button {
+    font-size: 18px;
+    font-family: 'Geo', sans-serif;
+    background-color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    line-height: 14px;
+    text-align: center;
+    flex: 1;
+}
+
+.info {
+    &_panel {
+        font-size: 24px;
+        font-family: 'Geo', sans-serif;
+        background: rgba(224, 224, 224, 1);
+        color: rgba(33, 33, 33, 1);
+        line-height: 24px;
+        padding: 0 8px;
+        cursor: default;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        span {
+            display: block;
+        }
+    }
+    &_generation {
+        color: rgba(104, 159, 56, 1);
+    }
+    &_lifecell {
+        color: rgba(236, 64, 122, 1);
+    }
+    &_speed {
+        color: rgba(0, 172, 193, 1);
+    }
+}
+
+#game {
+    float: center;
+}

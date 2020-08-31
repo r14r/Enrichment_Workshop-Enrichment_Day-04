@@ -1,0 +1,6 @@
+.env/
+
+**/.DS_Store
+
+node_nodules
+**/node_modules

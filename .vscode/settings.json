@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/node_modules.*": true,
+    "**/.vscode.*": true,
+    "**/e2e": true,
+    "**/e2e.*": true,
+    "**/*.lock": true,
+    "**/*.page.spec.ts": true,
+    "**/.env": true,
+    "**/.env.*": true,
+    "**/.vscode": true
+  }
+}

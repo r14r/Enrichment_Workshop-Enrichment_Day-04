@@ -1,0 +1,28 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>Master</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<h2 id="header">List der TODOs</h2>
+	<ion-list>
+		<ion-item-sliding #slidingItem *ngFor="let item of items" [routerLink]="'/detail/' + item.id" detail=" true">
+			<ion-item-options side="start">
+				<ion-item-option (click)="favorite(item)">Favorite</ion-item-option>
+				<ion-item-option color="danger" (click)="share(item)">Share</ion-item-option>
+			</ion-item-options>
+
+			<ion-item>
+				<app-details-item [item]="item"></app-details-item>
+			</ion-item>
+
+			<ion-item-options side="end">
+				<ion-item-option (click)="unread(item)">Unread</ion-item-option>
+			</ion-item-options>
+		</ion-item-sliding>
+	</ion-list>
+</ion-content>
